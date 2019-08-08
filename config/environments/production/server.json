@@ -1,6 +1,8 @@
 {
-  "host": "http://3.88.131.53",
-  "port": "${process.env.PORT || 1337}",
+  
+  "host": "${process.env.APP_HOST || '127.0.0.1'}",
+  "port": "${process.env.NODE_PORT || 1337}",
+  
   "production": true,
   "proxy": {
     "enabled": false
